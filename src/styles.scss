@@ -40,3 +40,29 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
+
+.page {
+  display: flex;
+}
+
+.side-bar {
+  width: 310px;
+}
+
+.main {
+  flex: 1;
+
+  > .mat-card {
+    margin-left: 0;
+  }
+}
+
+.mat-card {
+  margin: 15px;
+}
+
+p .mat-icon {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+}

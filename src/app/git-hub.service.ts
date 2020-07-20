@@ -11,6 +11,7 @@ query($username: String!) {
     avatarUrl
     name
     company
+    location
     email
     websiteUrl
     repositories(isFork: false, ownerAffiliations: OWNER, orderBy: {field: STARGAZERS, direction: DESC}, first: 100) {

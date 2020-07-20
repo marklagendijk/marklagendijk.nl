@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-nav-list>
+        <a *ngFor="let repository of repositories.nodes" mat-list-item [href]="repository.url">
+            <h2 matLine>{{ repository.name }}</h2>
+            <p matLine>{{ repository.description }}</p>
+            <p matLine>
+                <mat-icon>star_rate</mat-icon> {{ repository.stargazers.totalCount }}
+            </p>
+        </a>
+    </mat-nav-list>
+</mat-card>

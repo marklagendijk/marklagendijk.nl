@@ -10,10 +10,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
+import { ProfileComponent } from './profile/profile.component';
+import { RepositoryListComponent } from './repository-list/repository-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileComponent,
+    RepositoryListComponent
   ],
   imports: [
     BrowserModule,
