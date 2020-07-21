@@ -26,13 +26,22 @@ query($username: String!) {
             name
           }
         }
-        issues{
-          totalCount
-        }
         stargazers{
           totalCount
         }
-        pullRequests{
+        forks {
+          totalCount
+        }
+        openIssues: issues(filterBy: { states: OPEN }) {
+          totalCount
+        }
+        closedIssues: issues(filterBy: { states: CLOSED }) {
+          totalCount
+        }
+        openPullRequests: pullRequests(states: OPEN) {
+          totalCount
+        }
+        closedPullRequests: pullRequests(states: [CLOSED,MERGED]) {
           totalCount
         }
       }
