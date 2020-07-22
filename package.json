@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy": "rsync -a --delete dist/marklagendijk-nl/ pi@192.168.148.125:~/docker/apache/htdocs/marklagendijk.nl",
+    "publish": "git push && npm run build && npm run deploy"
   },
   "private": true,
   "dependencies": {
