@@ -1,12 +1,8 @@
 <div *ngIf="(userWithRepositories$ | async) as userWithRepositories" class="page">
     <div class="side-bar">
         <app-profile [user]="userWithRepositories.user"></app-profile>
-        <mat-card>
-            <a href="https://www.ssllabs.com/ssltest/analyze.html?d=marklagendijk.nl"><img src="https://img.shields.io/badge/SSL%20Report-A%2B-success" alt="SSL Report"></a>
-            <a href="https://securityheaders.com/?q=marklagendijk.nl&followRedirects=on"><img src="https://img.shields.io/security-headers?label=Security%20Headers&url=http%3A%2F%2Fmarklagendijk.nl" alt="Security Headers"></a>
-        </mat-card>
+        <app-server></app-server>
     </div>
-   
     <app-repository-list class="main" [repositories]="userWithRepositories.user.repositories"></app-repository-list>
 </div>
 

@@ -12,12 +12,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { ProfileComponent } from './profile/profile.component';
 import { RepositoryListComponent } from './repository-list/repository-list.component';
+import { ServerComponent } from './server/server.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    RepositoryListComponent
+    RepositoryListComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,

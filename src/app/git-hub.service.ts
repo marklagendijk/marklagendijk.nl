@@ -19,6 +19,7 @@ query($username: String!) {
       nodes {
         name
         description
+        createdAt
         url
         languages(first: 5){
           nodes{
@@ -43,6 +44,13 @@ query($username: String!) {
         }
         closedPullRequests: pullRequests(states: [CLOSED,MERGED]) {
           totalCount
+        }
+        defaultBranchRef{
+          target{
+            ... on Commit {
+              committedDate
+            }
+          }
         }
       }
     }
