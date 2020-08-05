@@ -10,6 +10,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
+import { IconModule } from '@visurel/iconify-angular';
 import { ProfileComponent } from './profile/profile.component';
 import { RepositoryListComponent } from './repository-list/repository-list.component';
 import { ServerComponent } from './server/server.component';
@@ -29,8 +30,8 @@ import { ServerComponent } from './server/server.component';
     HttpClientModule,
     MatListModule,
     MatCardModule,
-    MatIconModule,
     MatChipsModule,
+    IconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

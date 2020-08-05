@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import starRate from '@iconify/icons-ic/baseline-star-rate';
 
 @Component({
   selector: 'app-repository-list',
@@ -8,4 +9,6 @@ import { Component, Input } from '@angular/core';
 export class RepositoryListComponent {
   @Input()
   repositories: any;
+
+  starRateIcon = starRate;
 }

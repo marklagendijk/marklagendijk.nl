@@ -6,20 +6,24 @@
     <mat-card-content>
         <mat-list>
             <mat-list-item>
-                <mat-icon mat-list-icon>location_on</mat-icon>
-                <div mat-line>{{ user.location }}</div>
+                <ic-icon [icon]="locationOnIcon"></ic-icon>
+                {{ user.location }}
             </mat-list-item>
             <mat-list-item>
-                <mat-icon mat-list-icon>email</mat-icon>
-                <a mat-line [href]="'mailto:' + user.email">{{ user.email }}</a>
+                <ic-icon [icon]="emailIcon"></ic-icon>
+                <a [href]="'mailto:' + user.email">
+                    {{ user.email }}
+                </a>
             </mat-list-item>
             <mat-list-item>
-                <mat-icon mat-list-icon>link</mat-icon>
-                <a mat-line [href]="user.websiteUrl">{{ user.websiteUrl }}</a>
+                <ic-icon [icon]="linkIcon"></ic-icon>
+                <a [href]="user.websiteUrl">
+                    {{ user.websiteUrl }}
+                </a>
             </mat-list-item>
             <mat-list-item>
-                <mat-icon mat-list-icon>corporate_fare</mat-icon>
-                <div mat-line>{{ user.company }}</div>
+                <ic-icon [icon]="corporateFareIcon"></ic-icon>
+                {{ user.company }}
             </mat-list-item>
         </mat-list>
     </mat-card-content>
