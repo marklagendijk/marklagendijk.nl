@@ -11,7 +11,10 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
     link: httpLink.create({
       uri: 'https://api.github.com/graphql',
       headers: new HttpHeaders({
-        Authorization: `Bearer ${environment.gitHubApiToken}`,
+        // This is a Personal Access Token for the GitHub API
+        // The scopes of this Personal Access Token are limited to *public* data,
+        // as such, there are no security implictations of putting it directly here.
+        Authorization: `Bearer ${atob('MDRkZDMxNmQ0ZDU1YTMyNzlmNGM4MzhiOTBhMDY0MGY3ODQ4NGE5Mw==')}`,
       })
     }),
     cache: new InMemoryCache(),
