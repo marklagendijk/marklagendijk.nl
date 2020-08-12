@@ -6,23 +6,23 @@
     <mat-card-content>
         <mat-list>
             <mat-list-item>
-                <ic-icon [icon]="locationOnIcon"></ic-icon>
+                <ic-icon icon="location-on"></ic-icon>
                 {{ user.location }}
             </mat-list-item>
             <mat-list-item>
-                <ic-icon [icon]="emailIcon"></ic-icon>
+                <ic-icon icon="email"></ic-icon>
                 <a [href]="'mailto:' + user.email">
                     {{ user.email }}
                 </a>
             </mat-list-item>
             <mat-list-item>
-                <ic-icon [icon]="linkIcon"></ic-icon>
+                <ic-icon icon="link"></ic-icon>
                 <a [href]="user.websiteUrl">
                     {{ user.websiteUrl }}
                 </a>
             </mat-list-item>
             <mat-list-item>
-                <ic-icon [icon]="corporateFareIcon"></ic-icon>
+                <ic-icon icon="corporate-fare"></ic-icon>
                 {{ user.company }}
             </mat-list-item>
         </mat-list>
