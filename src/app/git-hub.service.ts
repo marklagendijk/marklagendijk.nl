@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { Apollo } from 'apollo-angular';
-import gql from 'graphql-tag';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import { Apollo } from "apollo-angular";
+import gql from "graphql-tag";
+import { Observable } from "rxjs";
+import { map } from "rxjs/operators";
 
 const repositoryQuery = gql(`
 query($username: String!) {
@@ -59,22 +59,19 @@ query($username: String!) {
 `);
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class GitHubService {
-  constructor(private apollo: Apollo) { }
+  constructor(private apollo: Apollo) {}
 
   getUserWithRepositories(username: string): Observable<any> {
     return this.apollo
       .watchQuery<any>({
         query: repositoryQuery,
         variables: {
-          username
-        }
+          username,
+        },
       })
-      .valueChanges
-      .pipe(
-        map(result => result.data),
-      );
+      .valueChanges.pipe(map((result) => result.data));
   }
 }

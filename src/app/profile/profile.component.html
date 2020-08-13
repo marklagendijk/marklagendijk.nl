@@ -1,30 +1,30 @@
 <mat-card>
-    <mat-card-header>
-        <img mat-card-avatar [src]="user.avatarUrl" alt="Mark Lagendijk">
-        <mat-card-title>{{ user.name }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item>
-                <ic-icon icon="location-on"></ic-icon>
-                {{ user.location }}
-            </mat-list-item>
-            <mat-list-item>
-                <ic-icon icon="email"></ic-icon>
-                <a [href]="'mailto:' + user.email">
-                    {{ user.email }}
-                </a>
-            </mat-list-item>
-            <mat-list-item>
-                <ic-icon icon="link"></ic-icon>
-                <a [href]="user.websiteUrl">
-                    {{ user.websiteUrl }}
-                </a>
-            </mat-list-item>
-            <mat-list-item>
-                <ic-icon icon="corporate-fare"></ic-icon>
-                {{ user.company }}
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
+  <mat-card-header>
+    <img mat-card-avatar [src]="user.avatarUrl" alt="Mark Lagendijk" />
+    <mat-card-title>{{ user.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <ic-icon icon="location-on"></ic-icon>
+        {{ user.location }}
+      </mat-list-item>
+      <mat-list-item>
+        <ic-icon icon="email"></ic-icon>
+        <a [href]="'mailto:' + user.email">
+          {{ user.email }}
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <ic-icon icon="link"></ic-icon>
+        <a [href]="user.websiteUrl">
+          {{ user.websiteUrl }}
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <ic-icon icon="corporate-fare"></ic-icon>
+        {{ user.company }}
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
 </mat-card>

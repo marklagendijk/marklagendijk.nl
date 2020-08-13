@@ -1,40 +1,47 @@
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 @include mat-core();
 
 $marklagendijk-nl-primary: mat-palette($mat-indigo);
 $marklagendijk-nl-accent: mat-palette($mat-pink, A200, A100, A400);
 $marklagendijk-nl-warn: mat-palette($mat-red);
-$marklagendijk-nl-theme: mat-light-theme((
-  color: (
-    primary: $marklagendijk-nl-primary,
-    accent: $marklagendijk-nl-accent,
-    warn: $marklagendijk-nl-warn,
+$marklagendijk-nl-theme: mat-light-theme(
+  (
+    color: (
+      primary: $marklagendijk-nl-primary,
+      accent: $marklagendijk-nl-accent,
+      warn: $marklagendijk-nl-warn,
+    ),
   )
-));
+);
 
 @include angular-material-theme($marklagendijk-nl-theme);
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url('/assets/fonts/roboto-v20-latin-300.woff2') format('woff2');
+  src: url("/assets/fonts/roboto-v20-latin-300.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/roboto-v20-latin-regular.woff2') format('woff2');
+  src: url("/assets/fonts/roboto-v20-latin-regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('/assets/fonts/roboto-v20-latin-500.woff2') format('woff2');
+  src: url("/assets/fonts/roboto-v20-latin-500.woff2") format("woff2");
 }
 
 .page {

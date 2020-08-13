@@ -1,9 +1,12 @@
-<div *ngIf="(userWithRepositories$ | async) as userWithRepositories" class="page">
-    <div class="side-bar">
-        <app-profile [user]="userWithRepositories.user"></app-profile>
-        <app-server></app-server>
-    </div>
-    <app-repository-list class="main" [repositories]="userWithRepositories.user.repositories"></app-repository-list>
+<div *ngIf="userWithRepositories$ | async as userWithRepositories" class="page">
+  <div class="side-bar">
+    <app-profile [user]="userWithRepositories.user"></app-profile>
+    <app-server></app-server>
+  </div>
+  <app-repository-list
+    class="main"
+    [repositories]="userWithRepositories.user.repositories"
+  ></app-repository-list>
 </div>
 
 <router-outlet></router-outlet>
