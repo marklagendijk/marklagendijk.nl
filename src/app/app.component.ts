@@ -1,7 +1,7 @@
 import { icons } from "./icons";
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
-import { ɵa as IconService } from "@visurel/iconify-angular";
+import { IconService } from "@visurel/iconify-angular";
 import { GitHubService } from "./git-hub.service";
 
 @Component({
