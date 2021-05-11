@@ -31,7 +31,7 @@
     "apollo-link": "^1.2.11",
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
